@@ -1,0 +1,62 @@
+.formulaire{
+
+	/*background-color: rgb(182, 226, 228);*/
+
+	width: 70%;
+	font-size: 20px;
+	border-radius: 7px;
+	
+
+}
+form{
+	display: flex;
+	flex-direction: column;
+	/*background-color: rgb(182, 226, 228);*/
+	border-radius: 7px;
+
+
+}
+
+.tete{
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	border-radius: 20px;
+	background-color: rgb(47, 31, 187);
+	color: white;
+}
+
+
+.formulaire input{
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 2%;
+	height: 35px;
+	border-radius: 5px;
+
+}
+legend{
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.engin input{
+    margin-left: 20%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+	height: 25px;
+	border-radius: 5px;
+}
+
+fieldset{
+	margin: 2%;
+	border-radius: 10px;
+	border:blue;
+	border-style:groove;
+	
+}
+
+label{
+	margin-right: 15%;
+}

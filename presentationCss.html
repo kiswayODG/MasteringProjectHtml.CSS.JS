@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Principaux éléments CSS</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			font-size: 3em;
+			margin: 0;
+		}
+		nav {
+			background-color: #ddd;
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav li {
+			display: inline-block;
+			margin: 0 10px;
+		}
+		nav a {
+			color: #333;
+			text-decoration: none;
+			padding: 5px;
+		}
+		nav a:hover {
+			background-color: #333;
+			color: #fff;
+		}
+        .home-link {
+  background-color: #ccc;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  text-align: left;
+  position: relative;
+            right: 250px;
+}
+
+.home-link:hover {
+  background-color: #999;
+}
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 20px;
+		}
+		article {
+			background-color: #ddd;
+			margin: 10px;
+			padding: 20px;
+			text-align: justify;
+			width: 300px;
+		}
+		article h2 {
+			font-size: 1.5em;
+			margin: 0 0 10px 0;
+		}
+		article p {
+			line-height: 1.5;
+			margin: 0;
+		}
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+        pre{
+            
+            position: relative;
+            right: 230px;
+
+        }
+		/* Exemples concrets */
+		.container {
+			background-color: #fff;
+			border: 1px solid #333;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			margin: 20px auto;
+			max-width: 600px;
+			padding: 20px;
+		}
+		.title {
+			color: #333;
+			font-size: 2em;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			text-shadow: 1px 1px #ddd;
+		}
+		.button {
+			background-color: #333;
+			border: none;
+			color: #fff;
+			cursor: pointer;
+			font-size: 1.2em;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			text-shadow: 1px 1px #000;
+			transition: background-color 0.5s;
+		}
+		.button:hover {
+			background-color: #666;
+		}
+		@media (max-width: 600px) {
+			.container {
+				max-width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Principaux éléments CSS</h1>
+	</header>
+	<nav>
+        <a href="index.html" class="home-link">Retour</a>
+		<ul>
+			<li><a href="#typographie">Typographie</a></li>
+            <li><a href="#couleurs">Couleurs</a></li>
+			<li><a href="#bordures">Bordures</a></li>
+			<li><a href="#ombres">Ombres</a></li>
+			<li><a href="#media-queries">Media Queries</a></li>
+		</ul>
+	</nav>
+	<main>
+		<article id="typographie">
+			<h2>Typographie</h2>
+			<p>La propriété <code>font-family</code> permet de définir la police de caractères utilisée pour le texte d'un élément. Par exemple :</p>
+			<pre>
+				p {
+					font-family: Arial, sans-serif;
+				}
+			</pre>
+			<p>La propriété <code>font-size</code> permet de définir la taille de la police de caractères. Par exemple :</p>
+			<pre>
+				h1 {
+					font-size: 2em;
+				}
+			</pre>
+			<p>La propriété <code>line-height</code> permet de définir l'espacement entre les lignes de texte. Par exemple :</p>
+			<pre>
+				p {
+					line-height: 1.5;
+				}
+			</pre>
+		</article>
+		<article id="couleurs">
+			<h2>Couleurs</h2>
+			<p>La propriété <code>color</code> permet de définir la couleur du texte. Par exemple :</p>
+			<pre>
+				p {
+					color: #333;
+				}
+			</pre>
+			<p>La propriété <code>background-color</code> permet de définir la couleur de fond d'un élément. Par exemple :</p>
+			<pre>
+				body {
+					background-color: #fff;
+				}
+			</pre>
+		</article>
+		<article id="bordures">
+			<h2>Bordures</h2>
+			<p>La propriété <code>border</code> permet de définir une bordure autour d'un élément. Par exemple :</p>
+			<pre>
+				div {
+					border: 1px solid #333;
+				}
+			</pre>
+		</article>
+		<article id="ombres">
+			<h2>Ombres</h2>
+			<p>La propriété <code>box-shadow</code> permet de définir une ombre autour d'un élément. Par exemple :</p>
+			<pre>
+				div {
+					box-shadow: 0 0 10px 
+                                        rgba(0, 0, 0, 0.5);
+				}
+			</pre>
+		</article>
+		<article id="media-queries">
+			<h2>Media Queries</h2>
+			<p>Les media queries permettent de modifier le style d'un site web en fonction de la taille de l'écran du dispositif utilisé pour le visualiser. Par exemple :</p>
+			<pre>
+				@media (max-width: 600px) {
+					div {
+						width: 100%;
+					}
+				}
+			</pre>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright UNB&copy;2023 <a href="#">ESI-TeamDev</a></p>
+	</footer
+

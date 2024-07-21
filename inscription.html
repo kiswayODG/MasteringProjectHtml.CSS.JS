@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <title>Universite Nazi Boni</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/form.css">
+    <meta name="viewport" content="width=device-width, initial-
+      scale=1.0"/>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <header>
+
+      <div class="header-banner">
+        <h1>Visitez NAZI BONI</h1>
+    </div>
+
+
+    <nav>
+        <ul>
+          <li>
+            <a href="index.html"><button class="custom-btn btn-12"><span>Accueil</span><span>Accueil</span></button></a>
+          </li>
+          <li>
+            <a href="formation.html"><button class="custom-btn btn-12"><span>Formations</span><span>Formations</span></button></a>
+          </li>
+          
+          <li>
+            <a href="inscription.html"><button class="custom-btn btn-12"><span>Inscription</span><span>Inscription</span></button></a>
+          </li>
+           <li>
+            <a href="#"><button class="custom-btn btn-12"><span>Paramètre</span><span>Paramètre</span></button></a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+   
+    
+  <div class="main-container">
+    <section class="content">
+
+
+
+      <div class="formulaire">
+        <div class="tete"><p style="font-size: 35px;">Informations sur l'étudiant</p></div>
+        <span id="nb">NB: *Tous les champs sont à remplir obligatoirement <br></span>
+
+        <form class="" action="renseignement.php" method="post">
+          <fieldset>
+              <legend>Situation</legend>
+          <input type="texte" name="choix1" placeholder="Matrimoniale" required>
+          <input type="texte" name="choix2" placeholder="Professionelle" required>
+          <input type="texte" name="choix3" placeholder="familiale" required> <br>
+
+
+        </fieldset>
+
+<fieldset class="engin">
+              <legend>Identité </legend>
+    <p>Qui êtes vous ?</p>
+          
+  Nom<br>
+  <input type="text" name="nom"  required><br><br>
+  Prénom<br>
+  <input type="texte" name="prenom"  required><br><br>
+  Résidence<br>
+  <input type="texte" name="reside"  required><br><br>
+
+        </fieldset>
+
+          <fieldset>
+              <legend> Date et lieu de naissance</legend>
+    Date et heure<br>
+    <input id="Aujourdhui" type="date" name="date" style=" margin-top:20px; margin-left:0px">
+    <input  type="time" name="heure" style=" margin-top:20px; margin-left:0px">
+    
+          </br></br>
+    Lieu de naissance</br>
+    <input  type="texte" name="lieu" style=" margin-top:20px; margin-left:0px">
+    
+        </fieldset>
+
+         
+
+         <fieldset class="engin">
+
+           <legend>Engagement de bonne foi</legend>
+           <input type="checkbox" id="choix" name="engagement" value="Oui" required>
+  <label for="enga">Mes infos sont vérifiables</label>
+          <div id="1"></div>
+         </fieldset>
+              <input type="submit" placeholder="Envoyer" style="background-color: rgb(4, 4, 241); color: white;text-align: center; margin-left: 2%; width: 25%;height: 40px; font-size: 18px;" >
+        </form>
+    </div>
+
+
+      
+  </section>
+  </div>
+      
+    
+    <footer>
+      <div class="footer-content">
+        <h3>Université Nazi Boni</h3>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>Copyright UNB&copy;2023 <a href="#">ESI-TeamDev</a></p>
+   
+   <div class="footer-menu">
+    <ul>
+       <li><a href=>Accueil</a></li>
+       <li><a href=>Formation</a></li>
+       <li><a href=>Inscription</a></li>
+       <li id="ti"><a href=>Paramètre</a></li>
+    </ul>
+  </div>
+
+   </div>
+    </footer>
+
+  </body>
+</html>
